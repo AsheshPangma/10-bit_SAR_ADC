@@ -1,0 +1,23 @@
+# Simulator output
+sim/**/*.raw
+sim/**/*.log
+sim/**/*.txt
+sim/**/*.csv
+
+# Extraction and LVS output
+*.ext
+*.spice.ext
+netgen/**/comp.out
+
+# Generated GDS: commit only for tagged releases (git add -f)
+*.gds
+
+# Python
+__pycache__/
+.pytest_cache/
+*.pyc
+.ipynb_checkpoints/
+
+# Operating-system files
+Thumbs.db
+.DS_Store
