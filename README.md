@@ -1,4 +1,4 @@
-[200~# 10-bit SAR ADC in SKY130
+# 10-bit SAR ADC in SKY130
 
 Fully differential 10-bit, 1 MS/s SAR ADC taken from specification to
 post-layout sign-off with open-source tools. Fabrication is out of scope.
