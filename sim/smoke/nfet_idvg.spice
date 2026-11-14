@@ -1,0 +1,14 @@
+* sky130 nfet_01v8 ID-VGS smoke test, typical corner
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+Vd d 0 0.9
+Vg g 0 0
+XM1 d g 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1
+.dc Vg 0 1.8 0.01
+.control
+run
+let id = -i(Vd)
+meas dc id_on find id at=1.8
+wrdata nfet_idvg.txt id
+quit
+.endc
+.end
